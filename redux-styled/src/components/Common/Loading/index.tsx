@@ -6,6 +6,9 @@ const LoadingWrapper = styled.div`
   font-weight: ${font.weight.bold};
 `
 
-export const Loading = () => {
-  return <LoadingWrapper>Loading...</LoadingWrapper>
+interface LoadingProps {
+  text?: string
+}
+export const Loading = ({ text = 'Loading...' }: LoadingProps) => {
+  return <LoadingWrapper>{text}</LoadingWrapper>
 }

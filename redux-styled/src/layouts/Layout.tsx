@@ -1,4 +1,3 @@
-import { Fragment } from 'react'
 import { Outlet } from 'react-router-dom'
 import { GNB } from '@/components/Common/GNB/GNB'
 import { GNBNavigation } from '@/components/Common/GNB/GNBNavigation'
@@ -24,7 +23,7 @@ const NAVWrapper = styled.div`
 export const Layout = () => {
   const { user, status, isLogin } = useAppSelector(selectUser)
   return (
-    <Fragment>
+    <>
       <GNB>
         <TitleWrapper>GNB</TitleWrapper>
         {status === 'fulfilled' && (
@@ -35,6 +34,6 @@ export const Layout = () => {
         {isLogin && <Profile user={user} />}
       </GNB>
       <Outlet />
-    </Fragment>
+    </>
   )
 }

@@ -1,4 +1,4 @@
-import { font, screen, theme } from '@/styles/variable'
+import { font, size, theme } from '@/styles/variable'
 import styled from 'styled-components'
 
 const GNBWrapper = styled.div`
@@ -8,7 +8,7 @@ const GNBWrapper = styled.div`
   color: ${font.color.light};
   font-size: ${font.size.base};
   > div {
-    max-width: ${screen.maxWidth};
+    max-width: ${size.maxWidth};
     height: 100%;
     margin: auto;
     display: flex;

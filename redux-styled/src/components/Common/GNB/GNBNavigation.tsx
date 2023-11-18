@@ -40,6 +40,7 @@ export const GNBNavigation = () => {
             <AnchorLink
               to='/login'
               onClick={() => {
+                // HACK : 로그아웃 API가 있어야하지만, 템플릿이니까 임시로 쿠키만 지웁니다.
                 removeCookie(ACCESS_TOKEN)
               }}
             >

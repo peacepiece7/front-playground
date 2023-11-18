@@ -5,7 +5,7 @@ export const theme = {
   transparent: 'transparent',
 }
 
-export const screen = {
+export const size = {
   maxWidth: '1200px',
 }
 

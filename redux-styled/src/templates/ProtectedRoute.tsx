@@ -1,3 +1,4 @@
+import { Loading } from '@/components/Common/Loading'
 import { useAppDispatch, useAppSelector } from '@/hooks/redux'
 import { selectUser } from '@/redux/features/user/userReducer'
 import { fetchUserThunk } from '@/redux/features/user/userThunk'
@@ -9,7 +10,7 @@ export const ProtectedRoute = () => {
 
   if (status === 'pending') {
     dispatch(fetchUserThunk())
-    return <div>Loading...</div>
+    return <Loading />
   }
 
   if (status === 'rejected') {
