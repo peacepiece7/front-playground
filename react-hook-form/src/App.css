@@ -4,6 +4,9 @@
   padding: 2rem;
   text-align: center;
 }
+* {
+  box-sizing: border-box;
+}
 
 .logo {
   height: 6em;
@@ -39,4 +42,21 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form input {
+  width: 200px;
+}
+.signup-form input[type='submit'] {
+  margin-top: 20px;
+}
+
+.warn {
+  color: red;
+  height: 20px;
 }
