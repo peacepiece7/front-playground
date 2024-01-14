@@ -32,3 +32,5 @@ https://yarnpkg.com/getting-started/qa#why-should-files-should-be-ignored
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+.vite
