@@ -3,7 +3,6 @@ import Nav from '@/components/Common/Navigation'
 import styled from 'styled-components'
 import { font, theme, transition } from '@/styles/variable'
 import { useAppSelector } from '@/hooks/redux'
-import { selectUser } from '@/redux/features/user/userReducer'
 import { removeCookie } from '@/utils'
 import { ACCESS_TOKEN } from '@/constants'
 const { List, Item, Link: AnchorLink } = Nav
@@ -20,7 +19,7 @@ const StyledLink = styled(Link)`
 `
 
 export const GNBNavigation = () => {
-  const { isLogin } = useAppSelector(selectUser)
+  const isLogin = useAppSelector((state) => state.user.isLogin)
   return (
     <Nav>
       <List $virtical={true}>

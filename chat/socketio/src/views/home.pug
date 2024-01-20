@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Zoom Clone
+        link(rel="stylesheet", href="https://unpkg.com/mvp.css@1.14.0/mvp.css")
+    body
+        p public rooms are:
+        ul#room-list
+        div#welcome
+            form#room-form
+                input(placeholder="room name", required, type="text")#room-name
+                input(placeholder="nickname", required, type="text")#nickname
+                button(type="submit") Enter a Room
+        div#room
+            h3#room-title
+            ul 
+            form#msg-form
+                input(placeholder="message", required, type="text")
+                button(type="submit") Send
+        script(src="/socket.io/socket.io.js")
+        script(src="/public/js/app.js")
