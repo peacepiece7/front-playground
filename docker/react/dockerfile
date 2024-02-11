@@ -9,6 +9,8 @@ RUN npm install
 # 환경 변수, 설정 등만 복사하기 docker ignore에 node_modules 추가
 COPY ./ ./
 
+RUN npm run build
+
 EXPOSE 5173/tcp
 
 CMD ["npm", "run", "dev"]
