@@ -6,10 +6,13 @@ export const Layout = () => {
       <nav>
         <ul>
           <li>
-            <Link to='test'>TEST</Link>
+            <Link to='bear'>zustand 기본 사용법</Link>
           </li>
           <li>
-            <Link to='foo'>FOO</Link>
+            <Link to='like-redux'>redux 처럼 쓰기</Link>
+          </li>
+          <li>
+            <Link to='selector'>selector example</Link>
           </li>
         </ul>
       </nav>
