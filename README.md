@@ -1,8 +1,4 @@
-# 이것저것 프론트 탬플릿 저장소
-
-일부는 private 저장소로 관리되고 있어서 접근이 안될 수 있습니다.
-
-## 내 저장소 링크
+# Front playground
 
 - [TDD](https://github.com/peacepiece7/react-tdd)는 요기
 - [React SSR](https://github.com/peacepiece7/react-webpack-ssr)은 요기 (renderToString임 나중에 renderToPipableStream도 추가하자!)
